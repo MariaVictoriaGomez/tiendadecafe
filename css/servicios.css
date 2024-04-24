@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Twinkle+Star&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Twinkle+Star&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 * {
     margin: 0;
@@ -24,6 +26,7 @@
     text-align: center;
     width: 50%;
     font-size: 1.2rem;
+    
 }
 
 span {
@@ -37,12 +40,14 @@ span {
     display: flex;
     justify-content: center;
     margin: 1.5rem;
+    font-family: "Montserrat", sans-serif ;
 }
 
 .text {
     font-size: 2rem;
     text-align: center;
     color: #242424;
+    font-family: "Montserrat", sans-serif ;
 }
 
 /* tarjetas*/
@@ -53,6 +58,7 @@ span {
     flex-wrap: wrap;
     padding: 1rem;
     gap: 2rem;
+   font-family: "Montserrat", sans-serif ;
 }
 
 .cards {
@@ -100,20 +106,26 @@ span {
     justify-content: center;
     padding: .5rem;
     
+    
 }
 
 .button-cards button {
-    border-radius: .5rem;
+    border-radius: .5rem; 
     width: 10rem;
     height: 2rem;
     cursor: pointer;
+    font-family: "Montserrat", sans-serif ;
+    border: none;
 }
 
 footer {
+    height: 10vh;
     background-color: #242424;
     color: white;
     display: flex;
+    align-items: center;
     justify-content: center;
+    font-family: "Montserrat", sans-serif ;
 }
 
 
@@ -127,6 +139,7 @@ footer {
 
     .text {
         font-size: 2.5rem;
+        
     }
 
     /* tarjetas*/
