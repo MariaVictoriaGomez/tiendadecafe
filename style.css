@@ -7,6 +7,16 @@
     padding: 0;
 }
 
-p{
+html{
     font-family: "Montserrat", sans-serif ;
+}
+
+.conteiner-header {
+    background-color: #242424;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
