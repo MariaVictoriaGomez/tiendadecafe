@@ -16,7 +16,7 @@
 }
 
 .imgaleria {
-  width: 600px;
+  width: 500px;
   opacity: 0.5;
 }
 .texto {
@@ -38,4 +38,15 @@
 
 .imgaleria:hover {
   opacity: 2;
+}
+
+@media only screen and (max-width:768px) {
+    .imgaleria{
+        width: 200px;
+    }
+
+    .galeria{
+      display: flex;
+      justify-content: center;
+    }
 }
