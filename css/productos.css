@@ -1,8 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Twinkle+Star&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Twinkle+Star&display=swap');
 
 * {
   padding: 0px;
   margin: 0px;
+  
+}
+
+
+.title {
+  width: 100vw;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgb(0 0 0 / .7), rgb(0 0 0 / .7)), url(/pages/assets/imgServicios/img1.webp);
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+.title-text {
+    color: white;
+    text-align: center;
+    width: 50%;
+    font-size: 1.2rem;
+    
+}
+
+.title-text span {
+  color: #C0AA83;
+  font-family: "Twinkle Star", cursive;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-text h1 {
+  font-family: "Montserrat", sans-serif;
 }
 
 .galeria {
@@ -10,6 +46,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
+  margin-top: 20px;
 }
 
 .productos {
@@ -21,7 +58,7 @@
   opacity: 0.5;
 }
 .texto {
-    font-family: "Montserrat", sans-serif;;
+    font-family: "Montserrat", sans-serif;
   color:#C0AA83;
   position: absolute;
   top: 50%;
