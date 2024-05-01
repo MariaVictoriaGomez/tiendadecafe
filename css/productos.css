@@ -5,12 +5,13 @@
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
   
 }
 
 
 .title {
-  width: 100vw;
+  /* width: 100vw; */
   height: 35vh;
   display: flex;
   align-items: center;
@@ -39,6 +40,21 @@
 
 .title-text h1 {
   font-family: "Montserrat", sans-serif;
+}
+
+.directory{
+  display: flex;
+  justify-content: flex-start;
+ margin-left: 12vw;
+    padding: 2vw;
+    font-family: "Montserrat", sans-serif;
+    gap:20px;
+    }
+
+.directory a {
+  text-decoration: none;
+  font-family:"Montserrat", sans-serif;
+  color:#C0AA83;
 }
 
 .galeria {
