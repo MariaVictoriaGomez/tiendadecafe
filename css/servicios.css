@@ -43,6 +43,22 @@ span {
     font-family: "Montserrat", sans-serif ;
 }
 
+
+.directory{
+    display: flex;
+    justify-content: flex-start;
+   margin-left: 12vw;
+      padding: 2vw;
+      font-family: "Montserrat", sans-serif;
+      gap:20px;
+      }
+  
+  .directory a {
+    text-decoration: none;
+    font-family:"Montserrat", sans-serif;
+    color:#C0AA83;
+  }
+  
 .text {
     font-size: 2rem;
     text-align: center;

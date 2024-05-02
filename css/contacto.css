@@ -1,11 +1,62 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+*{
+   
+    margin: 0;
+}
+
 html{
     font-family: "Montserrat", sans-serif;
     background-color:#ffffff;
 }
 
+.title {
+    /* width: 100vw; */
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(0 0 0 / .7), rgb(0 0 0 / .7)), url(/pages/assets/imgServicios/img1.webp);
+    background-size: cover;
+    background-position: center;
+  
+  }
+  
+  
+  .title-text {
+      color: white;
+      text-align: center;
+      width: 50%;
+      font-size: 1.2rem;
+      
+  }
+  
+  .title-text span {
+    color: #C0AA83;
+    font-family: "Twinkle Star", cursive;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title-text h1 {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .directory{
+    display: flex;
+    justify-content: flex-start;
+   margin-left: 12vw;
+      padding: 2vw;
+      font-family: "Montserrat", sans-serif;
+      gap:20px;
+      }
+  
+  .directory a {
+    text-decoration: none;
+    font-family:"Montserrat", sans-serif;
+    color:#C0AA83;
+  }
 .container{
     margin: auto;
     display: flex;
@@ -194,3 +245,15 @@ label input:focus{
     background-color: #C0AA83;
     color: #ffffff;
 }
+
+
+footer {
+    height: 10vh;
+    background-color: #242424;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif ;
+    margin-top: 20px;
+  }
