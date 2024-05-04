@@ -10,7 +10,6 @@
 }
 
 .title {
-    width: 100vw;
     height: 35vh;
     display: flex;
     align-items: center;
@@ -47,17 +46,16 @@ span {
 .directory{
     display: flex;
     justify-content: flex-start;
-   margin-left: 12vw;
-      padding: 2vw;
-      font-family: "Montserrat", sans-serif;
-      gap:20px;
-      }
+    padding: 2vw;
+    font-family: "Montserrat", sans-serif;
+    gap:2px;
+}
   
-  .directory a {
+.directory a {
     text-decoration: none;
     font-family:"Montserrat", sans-serif;
     color:#C0AA83;
-  }
+}
   
 .text {
     font-size: 2rem;
@@ -121,8 +119,6 @@ span {
     display: flex;
     justify-content: center;
     padding: .5rem;
-    
-    
 }
 
 .button-cards button {
@@ -134,14 +130,82 @@ span {
     border: none;
 }
 
+/*footer*/
+
 footer {
-    height: 10vh;
     background-color: #242424;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: "Montserrat", sans-serif ;
+}
+
+.social-footer {
+   display: flex;
+   justify-content:center; 
+   
+}
+
+.social-footer p{
+    padding: 1rem;
+}
+
+.social-footer ul{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.social-footer li{
+    list-style:none;
+    
+}
+
+.social-footer i{
+    color: aliceblue;
+}
+
+.social-footer i:hover{
+    transform: translateY(-4%);
+}
+
+
+  div.social-footer {
+    position: relative;
+    z-index: 1;
+  }
+
+  div.social-footer:before{
+    border-top: 2px solid white;
+    content: "";
+    margin:  auto;
+    position: absolute;
+    top: 45%;
+    left: 6%;
+    right: 6%;
+    bottom: 0;
+    width: 90%;
+    z-index: -1;
+  }
+
+  div.social-footer span{
+    background-color:#242424;
+  }
+.copyright-footer{
+    display: flex;
+    justify-content: center; 
+    padding: 1rem;
+}
+
+.legal-footer{
+    padding: .5rem;
+    font-size: .5rem;
+}
+
+.legal-footer ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1.5rem;
 }
 
 
@@ -222,10 +286,6 @@ footer {
 
     .container-cards {
         padding: 1rem;
-    }
-
-    .cards {
-        width: 18vw;
     }
 
     .title-cards {
