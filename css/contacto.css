@@ -286,6 +286,7 @@ footer {
 .container{
     margin-top: 2rem;
     margin-bottom: 3rem;
+    width: 90%;
 }
 
 .section-inputs label input {
