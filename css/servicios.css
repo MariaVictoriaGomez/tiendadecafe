@@ -36,6 +36,9 @@ span {
     flex-direction: column;
 }
 
+.title-text h1 {
+    font-family: "Montserrat", sans-serif;
+  }
 .container {
     display: flex;
     justify-content: center;
@@ -185,7 +188,7 @@ footer {
     }
 
     .title-text {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .text {
