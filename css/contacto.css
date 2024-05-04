@@ -74,6 +74,7 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap:0.5rem;
 }
 
 .login h3{
@@ -326,3 +327,46 @@ footer {
     gap: 1.5rem;
 }
 
+@media only screen and (max-width:768px) {
+
+    .title-text {
+
+        font-size: 1.2rem;
+    }
+
+    .text {
+        font-size: 2.5rem;
+        
+    }
+
+    .login{
+        margin-bottom: 2rem;
+    }
+
+    .login p{
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    .login h3{
+        font-size: 1.8rem;
+    }
+.container{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: 90%;
+}
+
+.section-inputs label input {
+    width: 60%;
+    font-size: 12px;
+}
+
+label input {
+    width: 80%;
+    font-size: 12px;
+}
+
+.submit-btn {
+    width: 90%;
+}
+}
