@@ -1,5 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Twinkle+Star&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Twinkle+Star&display=swap');
 
 *{
    
@@ -12,7 +14,7 @@ html{
 }
 
 .title {
-    /* width: 100vw; */
+    width: 100vw; 
     height: 35vh;
     display: flex;
     align-items: center;
@@ -28,7 +30,7 @@ html{
       color: white;
       text-align: center;
       width: 50%;
-      font-size: 1.2rem;
+      font-size: 2rem;
       
   }
   
@@ -251,6 +253,7 @@ footer {
     background-color: #242424;
     color: white;
     font-family: "Montserrat", sans-serif ;
+<<<<<<< HEAD
 }
 
 .social-footer {
@@ -321,4 +324,49 @@ footer {
     justify-content: center;
     list-style: none;
     gap: 1.5rem;
+=======
+    margin-top: 20px;
+  }
+
+  @media only screen and (max-width:768px) {
+
+    .title-text {
+
+        font-size: 1.2rem;
+    }
+
+    .text {
+        font-size: 2.5rem;
+        
+    }
+
+    .login{
+        margin-bottom: 2rem;
+    }
+
+    .login p{
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    .login h3{
+        font-size: 1.8rem;
+    }
+.container{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: 90%;
+}
+
+.section-inputs label input {
+    width: 60%;
+}
+
+label input {
+    width: 80%;
+}
+
+.submit-btn {
+    width: 90%;
+}
+>>>>>>> 07ce56288d8b17a95e67bdc21be19e74840a65e2
 }
