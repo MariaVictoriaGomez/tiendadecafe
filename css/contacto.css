@@ -291,10 +291,13 @@ footer {
 
 .section-inputs label input {
     width: 60%;
+    font-size: 12px;
 }
+
 
 label input {
     width: 80%;
+    font-size: 12px;
 }
 
 .submit-btn {
