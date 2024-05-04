@@ -199,19 +199,20 @@ label input{
     outline: none;
     font-size: 14pt;
     transition: background-color 0.2s, border 0.2s, box-shadow 0,2s;
-    color:white;
+    color:#242424;
+    font-family: "Montserrat", sans-serif;
 }
 
 label input:hover{
     background-color:  #ced2d6;
     border: solid 1px #f3f3f4;
-    box-shadow: 0 0 4px #eb50ff4f;
+    box-shadow: 0 0 4px #242424;
 }
 
 label input:focus{
     background-color: #DEE2E6;
     border: solid 1px #f3f3f4;
-    box-shadow: 0 0 4px #eb50ff4f;
+    box-shadow: 0 0 4px #242424;
 }
 
 .checkbox-label{
@@ -237,6 +238,7 @@ label input:focus{
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    font-family: "Montserrat", sans-serif;
 
 }
 
