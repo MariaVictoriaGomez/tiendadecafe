@@ -48,10 +48,9 @@ html{
   .directory{
     display: flex;
     justify-content: flex-start;
-   margin-left: 12vw;
       padding: 2vw;
       font-family: "Montserrat", sans-serif;
-      gap:20px;
+      gap:2px;
       }
   
   .directory a {
@@ -61,6 +60,7 @@ html{
   }
 .container{
     margin: auto;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -248,59 +248,81 @@ label input:focus{
     color: #ffffff;
 }
 
+/*footer*/
 
 footer {
-    height: 10vh;
     background-color: #242424;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: "Montserrat", sans-serif ;
-    margin-top: 20px;
+}
+
+.social-footer {
+   display: flex;
+   justify-content:center; 
+   
+}
+
+.social-footer p{
+    padding: 1rem;
+}
+
+.social-footer ul{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.social-footer li{
+    list-style:none;
+    
+}
+
+.social-footer i{
+    color: aliceblue;
+}
+
+.social-footer i:hover{
+    transform: translateY(-4%);
+}
+
+
+  div.social-footer {
+    position: relative;
+    z-index: 1;
   }
 
-  @media only screen and (max-width:768px) {
-
-    .title-text {
-
-        font-size: 1.2rem;
-    }
-
-    .text {
-        font-size: 2.5rem;
-        
-    }
-
-    .login{
-        margin-bottom: 2rem;
-    }
-
-    .login p{
-        margin-top: 1rem;
-        font-size: 1rem;
-    }
-    .login h3{
-        font-size: 1.8rem;
-    }
-.container{
-    margin-top: 2rem;
-    margin-bottom: 3rem;
+  div.social-footer:before{
+    border-top: 2px solid white;
+    content: "";
+    margin:  auto;
+    position: absolute;
+    top: 45%;
+    left: 6%;
+    right: 6%;
+    bottom: 0;
     width: 90%;
+    z-index: -1;
+  }
+
+  div.social-footer span{
+    background-color:#242424;
+  }
+.copyright-footer{
+    display: flex;
+    justify-content: center; 
+    padding: 1rem;
 }
 
-.section-inputs label input {
-    width: 60%;
-    font-size: 12px;
+.legal-footer{
+    padding: .5rem;
+    font-size: .5rem;
 }
 
-
-label input {
-    width: 80%;
-    font-size: 12px;
+.legal-footer ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1.5rem;
 }
 
-.submit-btn {
-    width: 90%;
-}
-}
