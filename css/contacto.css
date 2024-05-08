@@ -1,13 +1,66 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Twinkle+Star&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Twinkle+Star&display=swap');
+
+*{
+   
+    margin: 0;
+}
 
 html{
     font-family: "Montserrat", sans-serif;
     background-color:#ffffff;
 }
 
+.title {
+    width: 100vw; 
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(0 0 0 / .7), rgb(0 0 0 / .7)), url(/pages/assets/imgServicios/img1.webp);
+    background-size: cover;
+    background-position: center;
+  
+  }
+  
+  
+  .title-text {
+      color: white;
+      text-align: center;
+      width: 50%;
+      font-size: 2rem;
+      
+  }
+  
+  .title-text span {
+    color: #C0AA83;
+    font-family: "Twinkle Star", cursive;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title-text h1 {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .directory{
+    display: flex;
+    justify-content: flex-start;
+      padding: 2vw;
+      font-family: "Montserrat", sans-serif;
+      gap:2px;
+      }
+  
+  .directory a {
+    text-decoration: none;
+    font-family:"Montserrat", sans-serif;
+    color:#C0AA83;
+  }
 .container{
     margin: auto;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,6 +74,7 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap:0.5rem;
 }
 
 .login h3{
@@ -145,19 +199,20 @@ label input{
     outline: none;
     font-size: 14pt;
     transition: background-color 0.2s, border 0.2s, box-shadow 0,2s;
-    color:white;
+    color:#242424;
+    font-family: "Montserrat", sans-serif;
 }
 
 label input:hover{
     background-color:  #ced2d6;
     border: solid 1px #f3f3f4;
-    box-shadow: 0 0 4px #eb50ff4f;
+    box-shadow: 0 0 4px #242424;
 }
 
 label input:focus{
     background-color: #DEE2E6;
     border: solid 1px #f3f3f4;
-    box-shadow: 0 0 4px #eb50ff4f;
+    box-shadow: 0 0 4px #242424;
 }
 
 .checkbox-label{
@@ -183,6 +238,7 @@ label input:focus{
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    font-family: "Montserrat", sans-serif;
 
 }
 
@@ -193,4 +249,126 @@ label input:focus{
 ::selection {
     background-color: #C0AA83;
     color: #ffffff;
+}
+
+/*footer*/
+
+footer {
+    background-color: #242424;
+    color: white;
+    font-family: "Montserrat", sans-serif ;
+}
+
+.social-footer {
+   display: flex;
+   justify-content:center; 
+   
+}
+
+.social-footer p{
+    padding: 1rem;
+}
+
+.social-footer ul{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.social-footer li{
+    list-style:none;
+    
+}
+
+.social-footer i{
+    color: aliceblue;
+}
+
+.social-footer i:hover{
+    transform: translateY(-4%);
+}
+
+
+  div.social-footer {
+    position: relative;
+    z-index: 1;
+  }
+
+  div.social-footer:before{
+    border-top: 2px solid white;
+    content: "";
+    margin:  auto;
+    position: absolute;
+    top: 45%;
+    left: 6%;
+    right: 6%;
+    bottom: 0;
+    width: 90%;
+    z-index: -1;
+  }
+
+  div.social-footer span{
+    background-color:#242424;
+  }
+.copyright-footer{
+    display: flex;
+    justify-content: center; 
+    padding: 1rem;
+}
+
+.legal-footer{
+    padding: .5rem;
+    font-size: .5rem;
+}
+
+.legal-footer ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+@media only screen and (max-width:768px) {
+
+    .title-text {
+
+        font-size: 1.2rem;
+    }
+
+    .text {
+        font-size: 2.5rem;
+        
+    }
+
+    .login{
+        margin-bottom: 2rem;
+    }
+
+    .login p{
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    .login h3{
+        font-size: 1.8rem;
+    }
+.container{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: 90%;
+}
+
+.section-inputs label input {
+    width: 60%;
+    font-size: 12px;
+}
+
+label input {
+    width: 80%;
+    font-size: 12px;
+}
+
+.submit-btn {
+    width: 90%;
+}
 }
