@@ -61,14 +61,28 @@
    font-family:"Montserrat", sans-serif;
 }
 
+.text-nosotros .title-nosotros {
+  font-size: 3rem;
+}
+
 .img img {
    width: 50rem;
+}
+
+.img img:hover{
+  box-shadow: .2rem .4rem .4rem .4rem rgba(71, 70, 70, 0.329) ;
+  transform: translateY(-3%);
 }
 .text-nosotros{
    display: flex;
    align-items: center;
    justify-content: center;
    flex-direction: column;
+   margin: 2rem;
+}
+
+.text-nosotros p {
+  font-size: 1.5rem;
 }
 .objetivo{
    font-family:"Montserrat", sans-serif;
@@ -81,8 +95,15 @@
    align-items: center;
    justify-content: center;
    flex-direction: column;
+   margin: 2rem;
+}
+.text-objetivo .title-objetivo {
+  font-size: 3rem;
 }
 
+.text-objetivo p{
+  font-size: 1.5rem;
+}
 /*footer*/
 footer {
    background-color: #242424;
