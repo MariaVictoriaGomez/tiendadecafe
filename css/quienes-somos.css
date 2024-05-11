@@ -58,8 +58,13 @@
 .nosotros{
    display: flex;
   flex-direction: row;
+  justify-content: center;
    font-family:"Montserrat", sans-serif;
    padding: 3rem;
+}
+
+.text-nosotros{
+  width: 50rem;
 }
 
 .text-nosotros .title-nosotros {
@@ -81,7 +86,7 @@
    align-items: center;
    justify-content: center;
    flex-direction: column;
-   margin: 2rem;
+   margin: 3rem;
    gap: 1rem;
 }
 
@@ -91,6 +96,7 @@
 .objetivo{
    font-family:"Montserrat", sans-serif;
    display: flex;
+   justify-content: center;
    flex-direction: row-reverse;
    padding: 3rem;
 }
@@ -100,8 +106,9 @@
    align-items: center;
    justify-content: center;
    flex-direction: column;
-   margin: 2rem;
+   margin: 3rem;
    gap: 1rem;
+   width: 50rem;
 }
 .text-objetivo .title-objetivo {
   font-size: 3rem;
