@@ -14,7 +14,7 @@ html{
 }
 
 .title {
-    width: 100vw; 
+    
     height: 35vh;
     display: flex;
     align-items: center;
@@ -81,14 +81,13 @@ html{
     font-size: xx-large;
 }
 .buttons{
-    align-self: flex-start;
     display: flex;
-    gap: 20pxs;
+    gap: 20px;
 }
 
 
 .google-btn{
-background-color: #1A73E8;
+background-color:#3e3d3d;
 color: white;
 border:none;
 border-radius: 5px;
