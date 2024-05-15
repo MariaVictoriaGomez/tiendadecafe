@@ -21,12 +21,12 @@ function validarFormulario() {
         return false;
     }
 
-    // Si todas las validaciones pasan, el formulario se enviará
+    
     return true;
 }
 
 function validarEmail(email) {
-    // Expresión regular para validar el formato del correo electrónico
+    
     var re = /\S+@\S+\.\S+/;
     return re.test(email);
 }
