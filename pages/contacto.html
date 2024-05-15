@@ -49,11 +49,11 @@
     <hr>
 </div>
 
-<form action="" method="">
+<form action="" method="post" onsubmit="return validarFormulario()">
 <div class="section-inputs">
     <label for="name">
         <span>Nombre y Apellido</span>
-    <input id="name" name="name" placeholder="ej: María Perez">
+    <input id="name" name="name" placeholder="ej: María Perez" >
     </label>
 
  <label for="username">
@@ -66,13 +66,13 @@
 
 <label for="email">
         <span>Email</span>
-    <input id="email" name="email" placeholder="tunombre@email.com">
+    <input id="email" name="email" placeholder="tunombre@email.com" type="email">
     </label> 
     
     
 <label for="password">
         <span>Contaseña</span>
-    <input id="password" name="password" placeholder="6+ caracteres">
+    <input id="password" name="password" placeholder="6+ caracteres" type="password">
     </label> 
 
     <label for="checkbox" class="checkbox-label">
@@ -117,5 +117,6 @@
 
     </div>
     </footer>
+    <script src="./assets/js/form.js"></script>
 </body>
 </html>
