@@ -2,17 +2,29 @@ function validarFormulario() {
     var nombre = document.getElementById('name').value;
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
+    var validatePassword = document.getElementById('validate-password').value;
+    var username = document.getElementById('username').value;
+    var checkbox = document.getElementById('checkbox');
+
+
+
 
     if (nombre.trim() === '') {
-        
         alert('Por favor, ingresa tu nombre.');
         return false;
     }
 
+    if (username.trim() === '') {
+        alert('Por favor, ingresa tu usuario.');
+        return false;
+    }
+
+
     if (email.trim() === '') {
         alert('Por favor, ingresa tu correo electrónico.');
         return false;
-    } else if (!validarEmail(email)) {
+
+    } else if (!validarEmail(email)) { 
         alert('Por favor, ingresa un correo electrónico válido.');
         return false;
     }
@@ -21,13 +33,32 @@ function validarFormulario() {
         alert('Por favor, ingresa tu contraseña.');
         return false;
     }
+else if (password.length < 6) {
+    alert('La contraseña tiene que tener al menos 6 caracteres.');
+    return false;
+}
 
+
+    if (validatePassword.trim() === '') { 
+        alert('Por favor, confirmá tu contraseña.');
+        return false;
+    }
+
+    if (password !== validatePassword) {
+        alert('Las contraseñas no coinciden.');
+        return false;
+     
+    }
+
+    if (!checkbox.checked) {
+        alert('Tenés que aceptar los términos y condiciones legales.');
+        return false;
+    }
     
-    return true;
+    return true; 
 }
 
 function validarEmail(email) {
-    
     var re = /\S+@\S+\.\S+/;
     return re.test(email);
 }
