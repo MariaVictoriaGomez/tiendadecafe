@@ -4,6 +4,7 @@ function validarFormulario() {
     var password = document.getElementById('password').value;
 
     if (nombre.trim() === '') {
+        
         alert('Por favor, ingresa tu nombre.');
         return false;
     }
