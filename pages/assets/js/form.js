@@ -8,7 +8,6 @@ function validarFormulario() {
 
 
 
-
     if (nombre.trim() === '') {
         alert('Por favor, ingresa tu nombre.');
         return false;
@@ -54,8 +53,15 @@ else if (password.length < 6) {
         alert('Tenés que aceptar los términos y condiciones legales.');
         return false;
     }
-    
-    return true; 
+    document.body.innerHTML = `<div class="body-style"> <div class="card-container">
+    <div class="card">
+        <h2>¡Gracias por completar el formulario!</h2>
+        <p>Nos pondremos en contacto.</p>
+        </div>
+    </div>
+    </div>`; 
+
+    return false; 
 }
 
 function validarEmail(email) {
