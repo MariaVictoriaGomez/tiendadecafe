@@ -59,6 +59,10 @@ else if (password.length < 6) {
         <p>Nos pondremos en contacto.</p>
         </div>
     </div>
+    <div class="directory">
+    <a href="../index.html">Inicio </a>  
+    <p>/FORMULARIO</p>
+</div>
     </div>`; 
 
     return false; 
