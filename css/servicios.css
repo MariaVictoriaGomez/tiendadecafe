@@ -133,6 +133,24 @@ span {
     border: none;
 }
 
+
+.svg-arrow {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    width: 3rem;
+    height: 3rem;
+    color: #3b3b3a;
+    z-index: 2;
+    cursor: pointer;
+    transition: all .4s ease;
+    opacity: 1
+  }
+  
+  .svg-arrow:hover {
+    color: #7c6845;
+  }
+  
 /*footer*/
 
 footer {
