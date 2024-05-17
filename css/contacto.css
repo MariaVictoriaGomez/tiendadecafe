@@ -250,6 +250,25 @@ label input:focus{
     color: #ffffff;
 }
 
+
+.svg-arrow {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    width: 3rem;
+    height: 3rem;
+    color: #C0AA83;
+    z-index: 2;
+    cursor: pointer;
+    transition: all .4s ease;
+    opacity: 1
+  }
+  
+  .svg-arrow:hover {
+    color: #7c6845;
+  }
+  
+
 /*footer*/
 
 footer {
@@ -327,6 +346,42 @@ footer {
     list-style: none;
     gap: 1.5rem;
 }
+
+
+.body-style{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; 
+    margin: 0; 
+}
+.card-container{
+    background-color:#242424;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+}
+.card{
+    display: flex;
+    align-items: center;
+}
+.card h2 {
+
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.card p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+}
+
 
 @media only screen and (max-width:768px) {
 
