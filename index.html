@@ -7,28 +7,57 @@
     <title> Coffe Box</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="asset/img/favicon_1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://kit.fontawesome.com/c21e2c2f2d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+   
+
     <header id="header">
-        <div class="conteiner-header">
-            <h1 class="title">Coffe Box</h1>
-            <nav>
-                <ul>
-                    <li><a href="./pages/quienes-somos.html">QUIÉNES SOMOS</a></li>
+        <section>
+            <div class="logo">
+                <img src="./pages/assets/favicon_1.ico" alt="logo">
+            </div>
+    
+            <ul id="menuToggle" onclick="toggleMenu()"> <!-- Cambio el id a menuToggle -->
+                <li id="menuTrigger"><span class="material-symbols-outlined">
+                    menu
+                    </span></li> <!-- Cambio el botón por un elemento li -->
+                <ul id="menu">
+                    <li><a href="./pages/quienes-somos.html" class="enlaces">NOSOTROS</a></li>
                     <li><a href="./pages/productos.html">PRODUCTOS</a></li>
-                    <li><a href="./pages/servicios.html">SERVICIOS</a></li>
-                    <li><a href="./pages/contacto.html">CONTACTO</a></li>
+                    <li><a href="./pages/servicios.html" class="enlaces">SERVICIOS</a></li>
+                    <li><a href="./pages/contacto.html" class="enlaces">CONTACTO</a></li>
                 </ul>
-            </nav>
+            </ul>
+        </section>
+        <div class="container">
+            <div class="content">
+                <h1>THE COFFEE BOX</h1>
+                <p>El mejor café de tu casa</p>
+                <button>SUSCRIBITE</button>
+            </div>
         </div>
+      
     </header>
 
-    <main style="background-color: white; height: 30rem;">
- <!--borrar es una prueba-->
-    </main>
 
+
+    <div class="galeria">
+        <a href="./pages/quienes-somos.html">
+            <img class="imgaleria" src="./pages/assets/imgIndex/NOSOTROS.png" alt="imagen1"/>
+        </a>
+        <a href="./pages/productos.html">
+            <img class="imgaleria" src="./pages/assets/imgIndex/PRODUCTOS.png" alt="imagen2"/>
+        </a>
+        <a href="./pages/servicios.html">
+            <img class="imgaleria" src="./pages/assets/imgIndex/SERVICIOS.png" alt="imagen3"/>
+        </a>
+        <a href="./pages/contacto.html">
+            <img class="imgaleria" src="./pages/assets/imgIndex/CONCTACTO.png" alt="imagen4"/>
+      
+    </div>
     
     <div class="svg-arrow">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">

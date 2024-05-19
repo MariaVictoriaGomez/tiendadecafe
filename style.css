@@ -1,27 +1,271 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+ }
+ header {
+    background-color: #242424;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+   }
+   
+   .logo {
+       display: flex;
+       float: left;
+       margin-right: 10px;
+       margin-left: 20px;
+   position: relative;
+   z-index: 9999; /* Ajusta el valor de z-index según tus necesidades */
+         
+      
+   }
+   
+   .logo img {
+       width: 50px;
+       height: auto;
+       margin-right: 10px;
+       display: flex;
+       filter: brightness(1);
+      
+   }
+   
+   #menuToggle{
+       display: flex;
+       justify-content: flex-end;
+       background-color:  #242424;
+       color: #ffffff;
+       font-size: 18px;
+       padding: 8px 20px;
+       border-radius: 5px;
+       border: none;
+       cursor: pointer;
+       list-style-type: none;    
+       position: relative;
+       z-index: 9; /* Ajusta el valor de z-index según tus necesidades */
+         
+             
+         
+       
+   
+   }
+   
+   #menuToggle.fixed {
+       position: fixed;
+       top: 0;
+       left: 0;
+       right: 0;
+     }
+     
+     .logo.fixed {
+       position: fixed;
+       top: 10px; /* Ajusta la posición superior según tus necesidades */
+       left: 20px; /* Ajusta la posición izquierda según tus necesidades */
+       z-index: 999; /* Ajusta el valor de z-index según tus necesidades */
+   }
+   
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+  
+  ul#menu{
+      list-style: none;
+      width: 200px;
+      position: absolute;
+      z-index: 2; /* Asegura que el menú esté por encima de la imagen */
+  }
+  
+  ul#menu li{
+      margin: 5px 0;
+      opacity: 0;
+      transition: 0.5s all cubic-bezier(0.31,-0.105,0.43,1.4);
+      font-family: 'Figtree', sans-serif;
+  }
+  
+  
+  ul#menu li:nth-child(even){
+     transform: translateX(50px);
+  }
+  
+  ul#menu li:nth-child(odd){
+      transform: translateX(-50px);
+   }
+  
+   
+  ul#menu li:nth-child(1){
+      transition-delay: 0.1s;
+   }
+  
+    
+  ul#menu li:nth-child(2){
+      transition-delay: 0.2s;
+   }
+   
+   
+   ul#menu li:nth-child(3){
+      transition-delay: 0.3s;
+   }
+   
+   ul#menu li:nth-child(4){
+      transition-delay: 0.4s;
+   }
+  
+  
+  
+  ul#menu.active li{
+      opacity: 1;
+      transform: translateX(0px);
+  }
+   
+  ul#menu li a{
+      background-color: #242424;
+      display: block;
+      padding: 8px 20px;
+      font-weight: 500;
+      font-size: 16px;
+      color:#fff;
+      text-decoration: none;
+      border-radius: 3px;
+      width: 160px;
+  
+  }
+
+  .enlaces{
+    text-decoration: none;
+    color:#2B2B2B;
+}
+.enlaces:hover{
+    color:#201f1f;
+} 
+  
+/* IMAGEN FONDO Y TEXTO  */
+
+.container {
+    
+    width: 100%;
+    height: 40vh; 
+    background: url('./pages/assets/imgIndex/granos-cafe.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-html{
+.content {
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
     font-family: "Montserrat", sans-serif ;
 }
 
-.conteiner-header {
+p {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    font-family: "Montserrat", sans-serif ;
+}
+
+button {
+    font-size: 1em;
+    padding: 0.5em 1em;
     background-color: #242424;
+    border: none;
     color: white;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif ;
 }
 
-a {
-    color: white;
-    text-decoration: none;
+button:hover {
+    background-color: #ffffff;
+    color:#201f1f;
 }
 
+/* secciones */
 
+
+
+.nosotros {
+   
+    
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-family: "Montserrat", sans-serif;
+    justify-content: center;
+    
+  }
+  
+  .img {
+    
+    margin-top: 30rem;
+  }
+  
+
+  .img img:hover {
+    box-shadow: .2rem .4rem .4rem .4rem rgba(71, 70, 70, 0.329);
+    transform: translateY(-3%);
+  }
+  
+  .title-nosotros {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  
+  .text-nosotros {
+    padding: 1rem;
+    margin-top: 30rem;
+    width: 30rem;
+  }
+  
+  .text-nosotros p {
+    font-size: 1rem;
+    text-align: justify;
+  
+  }
+  
+.locales{
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 5rem;
+    margin-right: 28rem;
+    align-items: center;
+    gap: 1rem;
+}
+.img-locales img{
+    width: 30rem;
+}
+
+.img-locales img:hover{
+    box-shadow: .2rem .4rem .4rem .4rem rgba(71, 70, 70, 0.329);
+    transform: translateY(-3%);
+}
+.text-locales{
+    width: 30rem;
+}
+
+.text-locales p {
+    font-size: 1rem;
+    text-align: justify;
+}
+/* ARROW */
 .svg-arrow {
     position: fixed;
     bottom: 2%;
@@ -34,11 +278,11 @@ a {
     transition: all .4s ease;
     opacity: 1
   }
-  
+
   .svg-arrow:hover {
     color: #7c6845;
   }
-  
+
 /*footer*/
 
 footer {
@@ -49,8 +293,8 @@ footer {
 
 .social-footer {
    display: flex;
-   justify-content:center; 
-   
+   justify-content:center;
+
 }
 
 .social-footer p{
@@ -66,7 +310,7 @@ footer {
 
 .social-footer li{
     list-style:none;
-    
+
 }
 
 .social-footer i{
@@ -101,13 +345,13 @@ footer {
   }
 .copyright-footer{
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     padding: 1rem;
 }
 
 .legal-footer{
     padding: .5rem;
-    
+
     font-size: .6rem;
 }
 
@@ -117,3 +361,31 @@ footer {
     list-style: none;
     gap: 1.5rem;
 }
+/* 
+GALERIA
+ */
+
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30rem;
+    justify-content: center;
+    margin-bottom: 5rem;
+
+}
+.imgaleria{
+    width: 300px;
+    opacity: 0.5;
+}
+
+.imgaleria:hover{
+    opacity: 2;
+}
+
+.galeria a {
+    display: flex;
+}
+
+
