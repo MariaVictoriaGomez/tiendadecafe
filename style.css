@@ -387,3 +387,8 @@ GALERIA
 }
 
 
+@media only screen and (max-widht:500px){
+    .container {
+        background-image: url(./pages/assets/imgIndex/granos-cafe-small.png);
+    }
+}
