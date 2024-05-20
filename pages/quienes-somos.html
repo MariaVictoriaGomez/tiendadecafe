@@ -6,10 +6,30 @@
     <title>Quienes Somos</title>
     <link rel="stylesheet" href="../css/quienes-somos.css">
     <link rel="shortcut icon" href="assets/favicon_1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <script src="https://kit.fontawesome.com/c21e2c2f2d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header id="header"></header>
+    <header id="header">
+        <section>
+            <div class="logo">
+                <img src="../pages/assets/favicon2.png"alt="logo">
+            </div>
+    
+            <ul id="menuToggle" onclick="toggleMenu()"> <!-- Cambio el id a menuToggle -->
+                <li id="menuTrigger"><span class="material-symbols-outlined">
+                    menu
+                    </span></li> <!-- Cambio el botón por un elemento li -->
+                <ul id="menu">
+                    <li><a href="../pages/quienes-somos.html" class="enlaces">NOSOTROS</a></li>
+                    <li><a href="../pages/productos.html">PRODUCTOS</a></li>
+                    <li><a href="../pages/servicios.html" class="enlaces">SERVICIOS</a></li>
+                    <li><a href="../pages/contacto.html" class="enlaces">CONTACTO</a></li>
+                </ul>
+            </ul>
+        </section>
+
+    </header>
     <div class="title">
         <div class="title-text">
             <h1><span>Quiénes</span>SOMOS</h1>

@@ -22,7 +22,7 @@
        margin-right: 10px;
        margin-left: 20px;
    position: relative;
-   z-index: 9999; /* Ajusta el valor de z-index según tus necesidades */
+   z-index: 9999; 
          
       
    }
@@ -48,10 +48,8 @@
        cursor: pointer;
        list-style-type: none;    
        position: relative;
-       z-index: 9; /* Ajusta el valor de z-index según tus necesidades */
-         
-             
-         
+       z-index: 9;   
+                   
        
    
    }
@@ -65,9 +63,9 @@
      
      .logo.fixed {
        position: fixed;
-       top: 10px; /* Ajusta la posición superior según tus necesidades */
-       left: 20px; /* Ajusta la posición izquierda según tus necesidades */
-       z-index: 999; /* Ajusta el valor de z-index según tus necesidades */
+       top: 10px;
+       left: 20px; 
+       z-index: 999; 
    }
    
 .material-symbols-outlined {
@@ -389,3 +387,8 @@ GALERIA
 }
 
 
+@media only screen and (max-widht:500px){
+    .container {
+        background-image: url(./pages/assets/imgIndex/granos-cafe-small.png);
+    }
+}

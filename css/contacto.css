@@ -13,6 +13,147 @@ html{
     background-color:#ffffff;
 }
 
+header {
+    background-color: #242424;
+    
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+   }
+   
+   .logo {
+       display: flex;
+       float: left;
+       margin-right: 10px;
+       margin-left: 20px;
+   position: relative;
+   z-index: 9999; 
+         
+      
+   }
+   
+   .logo img {
+       width: 50px;
+       height: auto;
+       margin-right: 10px;
+       display: flex;
+       filter: brightness(1);
+      
+   }
+   
+   #menuToggle{
+       display: flex;
+       justify-content: flex-end;
+       background-color:  #242424;
+       color: #ffffff;
+       font-size: 18px;
+       padding: 8px 20px;
+       border-radius: 5px;
+       border: none;
+       cursor: pointer;
+       list-style-type: none;    
+       position: relative;
+       z-index: 9;   
+                   
+       
+   
+   }
+   
+   #menuToggle.fixed {
+       position: fixed;
+       top: 0;
+       left: 0;
+       right: 0;
+     }
+     
+     .logo.fixed {
+       position: fixed;
+       top: 10px;
+       left: 20px; 
+       z-index: 999; 
+   }
+   
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+  
+  ul#menu{
+      list-style: none;
+      width: 200px;
+      position: absolute;
+      z-index: 2; /* Asegura que el menú esté por encima de la imagen */
+  }
+  
+  ul#menu li{
+      margin: 5px 0;
+      opacity: 0;
+      transition: 0.5s all cubic-bezier(0.31,-0.105,0.43,1.4);
+      font-family: 'Figtree', sans-serif;
+  }
+  
+  
+  ul#menu li:nth-child(even){
+     transform: translateX(50px);
+  }
+  
+  ul#menu li:nth-child(odd){
+      transform: translateX(-50px);
+   }
+  
+   
+  ul#menu li:nth-child(1){
+      transition-delay: 0.1s;
+   }
+  
+    
+  ul#menu li:nth-child(2){
+      transition-delay: 0.2s;
+   }
+   
+   
+   ul#menu li:nth-child(3){
+      transition-delay: 0.3s;
+   }
+   
+   ul#menu li:nth-child(4){
+      transition-delay: 0.4s;
+   }
+  
+  
+  
+  ul#menu.active li{
+      opacity: 1;
+      transform: translateX(0px);
+  }
+   
+  ul#menu li a{
+      background-color: #242424;
+      display: block;
+      padding: 8px 20px;
+      font-weight: 500;
+      font-size: 16px;
+      color:#fff;
+      text-decoration: none;
+      border-radius: 3px;
+      width: 160px;
+  
+  }
+
+  .enlaces{
+    text-decoration: none;
+    color:#2B2B2B;
+}
+.enlaces:hover{
+    color:#201f1f;
+} 
+
+
 .title {
     
     height: 35vh;
