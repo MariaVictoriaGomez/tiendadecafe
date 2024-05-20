@@ -68,14 +68,6 @@ nav {
     z-index: 999;
 }
 
-.material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 24,
-}
-
 ul#menu {
     list-style: none;
     width: 200px;
@@ -191,64 +183,6 @@ ul#menu li a {
 .content a:hover {
     background-color: #ffffff;
 
-}
-
-/* secciones */
-.nosotros {
-    font-family: "Montserrat", sans-serif;
-}
-
-.img {
-
-    margin-top: 30rem;
-}
-
-
-.img img:hover {
-    box-shadow: .2rem .4rem .4rem .4rem rgba(71, 70, 70, 0.329);
-    transform: translateY(-3%);
-}
-
-.title-nosotros {
-    font-size: 1.5rem;
-}
-
-.text-nosotros {
-    padding: 1rem;
-    margin-top: 30rem;
-    width: 30rem;
-}
-
-.text-nosotros p {
-    font-size: 1rem;
-    text-align: justify;
-
-}
-
-.locales {
-    font-family: "Montserrat", sans-serif;
-    margin-top: 5rem;
-    margin-right: 28rem;
-    align-items: center;
-    gap: 1rem;
-}
-
-.img-locales img {
-    width: 30rem;
-}
-
-.img-locales img:hover {
-    box-shadow: .2rem .4rem .4rem .4rem rgba(71, 70, 70, 0.329);
-    transform: translateY(-3%);
-}
-
-.text-locales {
-    width: 30rem;
-}
-
-.text-locales p {
-    font-size: 1rem;
-    text-align: justify;
 }
 
 /* ARROW */
