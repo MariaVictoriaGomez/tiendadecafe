@@ -364,6 +364,34 @@ label input:focus {
     box-shadow: 0 0 4px #242424;
 }
 
+.label-country{
+    width: 50%;
+   
+}
+
+.select-country{
+    background-color: #DEE2E6;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+.select-country:focus{
+    background-color: #DEE2E6;
+    border: solid 1px #f3f3f4;
+    box-shadow: 0 0 4px #242424;
+}
+.select-country:hover{
+    background-color: #DEE2E6;
+    border: solid 1px #f3f3f4;
+    box-shadow: 0 0 4px #242424;
+}
+
+
+
+
 .checkbox-label {
     display: flex;
     flex-direction: row;
