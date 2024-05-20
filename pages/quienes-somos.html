@@ -13,6 +13,32 @@
 </head>
 
 <body>
+    <header id="header">
+        <nav>
+            <div class="logo">
+                <a href="../pages/quienes-somos.html"> <img src="../pages/assets/favicon2.png" alt="logo"></a>
+            </div>
+            <!--menu en tamaños grandes-->
+            <ul id="menu-visible">
+                <li><a href="../pages/quienes-somos.html" class="enlaces">NOSOTROS</a></li>
+                <li><a href="../pages/productos.html" class="enlaces">PRODUCTOS</a></li>
+                <li><a href="../pages/servicios.html" class="enlaces">SERVICIOS</a></li>
+                <li><a href="../pages/contacto.html" class="enlaces">CONTACTO</a></li>
+            </ul>
+
+            <ul id="menuToggle" onclick="toggleMenu()"> <!-- Cambio el id a menuToggle -->
+                <li id="menuTrigger"><span class="material-symbols-outlined">
+                        menu
+                    </span></li> <!-- Cambio el botón por un elemento li -->
+                <ul id="menu">
+                    <li><a href="../pages/quienes-somos.html" class="enlaces">NOSOTROS</a></li>
+                    <li><a href="../pages/productos.html" class="enlaces">PRODUCTOS</a></li>
+                    <li><a href="../pages/servicios.html" class="enlaces">SERVICIOS</a></li>
+                    <li><a href="../pages/contacto.html" class="enlaces">CONTACTO</a></li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
     <div class="title">
         <div class="title-text">
             <h1><span>Quiénes</span>SOMOS</h1>
