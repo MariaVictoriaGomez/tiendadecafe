@@ -39,6 +39,7 @@ nav {
 
 }
 
+
 #menu-visible {
   display: none;
 }
@@ -76,7 +77,8 @@ nav {
       'FILL' 0,
       'wght' 400,
       'GRAD' 0,
-      'opsz' 24,
+      'opsz' 24,;
+      color: white;
 }
 
 ul#menu {
