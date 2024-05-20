@@ -9,148 +9,6 @@
     box-sizing: border-box;
 }
 
-
-header {
-    background-color: #242424;
-    
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 10;
-   }
-   
-   .logo {
-       display: flex;
-       float: left;
-       margin-right: 10px;
-       margin-left: 20px;
-   position: relative;
-   z-index: 9999; 
-         
-      
-   }
-   
-   .logo img {
-       width: 50px;
-       height: auto;
-       margin-right: 10px;
-       display: flex;
-       filter: brightness(1);
-      
-   }
-   
-   #menuToggle{
-       display: flex;
-       justify-content: flex-end;
-       background-color:  #242424;
-       color: #ffffff;
-       font-size: 18px;
-       padding: 8px 20px;
-       border-radius: 5px;
-       border: none;
-       cursor: pointer;
-       list-style-type: none;    
-       position: relative;
-       z-index: 9;   
-                   
-       
-   
-   }
-   
-   #menuToggle.fixed {
-       position: fixed;
-       top: 0;
-       left: 0;
-       right: 0;
-     }
-     
-     .logo.fixed {
-       position: fixed;
-       top: 10px;
-       left: 20px; 
-       z-index: 999; 
-   }
-   
-.material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
-  }
-  
-  ul#menu{
-      list-style: none;
-      width: 200px;
-      position: absolute;
-      z-index: 2; /* Asegura que el menú esté por encima de la imagen */
-  }
-  
-  ul#menu li{
-      margin: 5px 0;
-      opacity: 0;
-      transition: 0.5s all cubic-bezier(0.31,-0.105,0.43,1.4);
-      font-family: 'Figtree', sans-serif;
-  }
-  
-  
-  ul#menu li:nth-child(even){
-     transform: translateX(50px);
-  }
-  
-  ul#menu li:nth-child(odd){
-      transform: translateX(-50px);
-   }
-  
-   
-  ul#menu li:nth-child(1){
-      transition-delay: 0.1s;
-   }
-  
-    
-  ul#menu li:nth-child(2){
-      transition-delay: 0.2s;
-   }
-   
-   
-   ul#menu li:nth-child(3){
-      transition-delay: 0.3s;
-   }
-   
-   ul#menu li:nth-child(4){
-      transition-delay: 0.4s;
-   }
-  
-  
-  
-  ul#menu.active li{
-      opacity: 1;
-      transform: translateX(0px);
-  }
-   
-  ul#menu li a{
-      background-color: #242424;
-      display: block;
-      padding: 8px 20px;
-      font-weight: 500;
-      font-size: 16px;
-      color:#fff;
-      text-decoration: none;
-      border-radius: 3px;
-      width: 160px;
-  
-  }
-
-  .enlaces{
-    text-decoration: none;
-    color:#2B2B2B;
-}
-.enlaces:hover{
-    color:#201f1f;
-} 
-
-
 .title {
     height: 35vh;
     display: flex;
@@ -167,7 +25,7 @@ header {
     text-align: center;
     width: 50%;
     font-size: 1.2rem;
-    
+
 }
 
 span {
@@ -179,34 +37,35 @@ span {
 
 .title-text h1 {
     font-family: "Montserrat", sans-serif;
-  }
+}
+
 .container {
     display: flex;
     justify-content: center;
     margin: 1.5rem;
-    font-family: "Montserrat", sans-serif ;
+    font-family: "Montserrat", sans-serif;
 }
 
 
-.directory{
+.directory {
     display: flex;
     justify-content: flex-start;
     padding: 2vw;
     font-family: "Montserrat", sans-serif;
-    gap:2px;
+    gap: 2px;
 }
-  
+
 .directory a {
     text-decoration: none;
-    font-family:"Montserrat", sans-serif;
-    color:#C0AA83;
+    font-family: "Montserrat", sans-serif;
+    color: #C0AA83;
 }
-  
+
 .text {
     font-size: 2rem;
     text-align: center;
     color: #242424;
-    font-family: "Montserrat", sans-serif ;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* tarjetas*/
@@ -217,7 +76,7 @@ span {
     flex-wrap: wrap;
     padding: 1rem;
     gap: 2rem;
-   font-family: "Montserrat", sans-serif ;
+    font-family: "Montserrat", sans-serif;
 }
 
 .cards {
@@ -228,8 +87,8 @@ span {
     transition: all 400ms ease;
 }
 
-.cards:hover{
-    box-shadow: .2rem .4rem .4rem .4rem rgba(0, 0, 0, 0.5) ;
+.cards:hover {
+    box-shadow: .2rem .4rem .4rem .4rem rgba(0, 0, 0, 0.5);
     transform: translateY(-3%);
 }
 
@@ -267,11 +126,11 @@ span {
 }
 
 .button-cards button {
-    border-radius: .5rem; 
+    border-radius: .5rem;
     width: 10rem;
     height: 2rem;
     cursor: pointer;
-    font-family: "Montserrat", sans-serif ;
+    font-family: "Montserrat", sans-serif;
     border: none;
 }
 
@@ -287,60 +146,60 @@ span {
     cursor: pointer;
     transition: all .4s ease;
     opacity: 1
-  }
-  
-  .svg-arrow:hover {
+}
+
+.svg-arrow:hover {
     color: #7c6845;
-  }
-  
+}
+
 /*footer*/
 
 footer {
     background-color: #242424;
     color: white;
-    font-family: "Montserrat", sans-serif ;
+    font-family: "Montserrat", sans-serif;
 }
 
 .social-footer {
-   display: flex;
-   justify-content:center; 
-   
+    display: flex;
+    justify-content: center;
+
 }
 
-.social-footer p{
+.social-footer p {
     padding: 1rem;
 }
 
-.social-footer ul{
+.social-footer ul {
     display: flex;
     justify-content: center;
     padding: 1rem;
     gap: 2rem;
 }
 
-.social-footer li{
-    list-style:none;
-    
+.social-footer li {
+    list-style: none;
+
 }
 
-.social-footer i{
+.social-footer i {
     color: aliceblue;
 }
 
-.social-footer i:hover{
+.social-footer i:hover {
     transform: translateY(-4%);
 }
 
 
-  div.social-footer {
+div.social-footer {
     position: relative;
     z-index: 1;
-  }
+}
 
-  div.social-footer:before{
+div.social-footer:before {
     border-top: 2px solid white;
     content: "";
-    margin:  auto;
+    margin: auto;
     position: absolute;
     top: 45%;
     left: 6%;
@@ -348,23 +207,24 @@ footer {
     bottom: 0;
     width: 90%;
     z-index: -1;
-  }
+}
 
-  div.social-footer span{
-    background-color:#242424;
-  }
-.copyright-footer{
+div.social-footer div {
+    background-color: #242424;
+}
+
+.copyright-footer {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     padding: 1rem;
 }
 
-.legal-footer{
+.legal-footer {
     padding: .5rem;
     font-size: .5rem;
 }
 
-.legal-footer ul{
+.legal-footer ul {
     display: flex;
     justify-content: center;
     list-style: none;
@@ -382,7 +242,7 @@ footer {
 
     .text {
         font-size: 2.5rem;
-        
+
     }
 
     /* tarjetas*/
@@ -426,7 +286,7 @@ footer {
         justify-content: center;
     }
 
-    .cards{
+    .cards {
         width: 30vw;
     }
 
