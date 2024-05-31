@@ -269,22 +269,6 @@ header {
     font-weight: 500;
 }
 
-/* .twitter-btn{
-
-    color: #ccc;
-    background-color: #eee;
-    border: none;
-    width: 40px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.twitter-btn img{
-    width: 60%;
-}
-.twitter-btn:hover{
-    background-color: #ddd;
-} */
 
 .separator {
     display: flex;
@@ -375,8 +359,10 @@ label input:focus {
     border-radius: 10px;
     border: none;
     font-family: "Montserrat", sans-serif;
+    height: 43px;
     
 }
+
 
 .select-country:focus{
     background-color: #DEE2E6;

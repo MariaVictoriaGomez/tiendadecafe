@@ -143,7 +143,7 @@ ul#menu li a {
 /* IMAGEN FONDO Y TEXTO  */
 
 .container {
-    background: url(./pages/assets/imgInicio/fondo.jpg) no-repeat center/cover;
+    background: url(./pages/assets/imgInicio/fondo-optimizado.jpg) no-repeat center/cover;
     padding: 10rem;
     color: rgb(247, 241, 241);
     display: flex;
