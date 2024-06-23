@@ -14,7 +14,7 @@ export default class UsersRoutes extends Routes{
     getRoutes(){
         this.router
         .get('/', this.controller.getUsers)
-        .get('/user', this.controller.getUserbyId)
+        .get('/user', this.controller.getUserById)
         .post('/', this.controller.addUsers)
         .put('/', this.controller.modifyUser)
         .delete('/:id', this.controller.deleteUser )
