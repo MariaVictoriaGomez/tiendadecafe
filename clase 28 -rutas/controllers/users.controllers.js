@@ -13,7 +13,7 @@ export default class UsersControllers {
 
     }
 
-    getUserById= (req, res) => {
+    getUserbyId= (req, res) => {
         const {id}= req.query
         const user = this.users.find(user => user.id === parseInt(id))
         res.json(user)
