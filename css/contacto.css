@@ -582,6 +582,13 @@ div.social-footer div {
         width: 90%;
     }
 
+    
+    .section-inputs{
+      
+        align-items: flex-end;
+    }
+
+
     .section-inputs label input {
         width: 60%;
         font-size: 12px;
