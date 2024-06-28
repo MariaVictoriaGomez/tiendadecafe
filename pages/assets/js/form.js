@@ -3,8 +3,9 @@ function validarFormulario() {
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
     var validatePassword = document.getElementById('validate-password').value;
-    var username = document.getElementById('username').value;
+    var userdni = document.getElementById('userdni').value;
     var checkbox = document.getElementById('checkbox');
+    var birthdate = document.getElementById('birthdate').value;
 
 
 
@@ -13,8 +14,18 @@ function validarFormulario() {
         return false;
     }
 
-    if (username.trim() === '') {
-        alert('Por favor, ingresa tu usuario.');
+    if (userdni.trim() === '') {
+        alert('Por favor, ingresa tu DNI.');
+        return false;
+    }
+
+    else if (userdni.length < 8) {
+        alert('El DNI debe tener al menos 8 caracteres.');
+        return false;
+    }
+
+    else if (!/^\d+$/.test(userdni)) { 
+        alert('El DNI solo puede contener números.');
         return false;
     }
 
@@ -25,6 +36,11 @@ function validarFormulario() {
 
     } else if (!validarEmail(email)) { 
         alert('Por favor, ingresa un correo electrónico válido.');
+        return false;
+    }
+
+    if (birthdate.trim() === ''){
+        alert('Por favor, ingresá tu fecha de nacimiento.');
         return false;
     }
 
